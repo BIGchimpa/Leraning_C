@@ -1,0 +1,12 @@
+PSEUDOCÓDIGO --> PASSOU DE ANO?
+Defina 4 variáveis:
+N1, N2, N3, NF.
+
+sejam N1,N2,N3 números pertencentes ao conjunto dos racionais não negativos menores ou iguais  10, que representem respectivamente as notas de um aluno em determinado semestre e em determinada disciplina.
+se N1 OU N2 OU N3 não satisfazerem a resolução acima, retorne mensagem de erro: "as notas devem ser números positivos e menores ou iguais a 10"
+se N1 E N2 E N3 satisfazerem a resolução acima, então realize:
+(N1 + N2 + N3) = NF
+NF /= 3
+se o valor da de NF for menor que 5, retorne a mensagem: "REPROVADO :("
+se o valor de NF for maior ou igual a 5, retorne a mensagem: "APROVADO :)"
+
