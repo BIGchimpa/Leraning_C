@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+float a = 1.0, b = -3.0, c = 2.0; // valores arbitrarios para as variáveis
+
+float quadratica(float x) {
+    return a * x * x + b * x + c;
+}
