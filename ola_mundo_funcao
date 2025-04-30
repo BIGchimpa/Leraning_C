@@ -1,0 +1,5 @@
+#include <stdio.h>
+
+void imprime_ola() {
+    printf("Ola, mundo!\n");
+}
