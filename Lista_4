@@ -1,0 +1,53 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+// 1. Imprime um número aleatório de 2 até 12
+void imprimeNumeroAleatorio() {
+    srand(time(0)); // inicializa a semente do gerador de números aleatórios
+    int numero = rand() % 11 + 2; // gera número de 2 a 12
+    cout << "Número aleatório entre 2 e 12: " << numero << endl;
+}
+
+// 2. Função recursiva que retorna a soma de 1 até n
+int somaRecursiva(int n) {
+    if (n == 1)
+        return 1;
+    return n + somaRecursiva(n - 1);
+}
+
+// 3. Função recursiva que retorna a quantidade de dígitos de um número inteiro
+int contaDigitos(int n) {
+    if (n < 10 && n > -10)
+        return 1;
+    return 1 + contaDigitos(n / 10);
+}
+
+// 4. Função recursiva que calcula base elevada ao expoente
+int potencia(int base, int expoente) {
+    if (expoente == 0)
+        return 1;
+    return base * potencia(base, expoente - 1);
+}
+
+int main() {
+    imprimeNumeroAleatorio();
+
+    int n;
+    cout << "\nDigite um número para calcular a soma de 1 até n: ";
+    cin >> n;
+    cout << "Soma de 1 até " << n << " = " << somaRecursiva(n) << endl;
+
+    cout << "\nDigite um número para contar os dígitos: ";
+    cin >> n;
+    cout << "Quantidade de dígitos: " << contaDigitos(n) << endl;
+
+    int base, expoente;
+    cout << "\nDigite a base e o expoente para calcular a potência: ";
+    cin >> base >> expoente;
+    cout << base << "^" << expoente << " = " << potencia(base, expoente) << endl;
+
+    return 0;
+}
